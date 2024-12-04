@@ -1,0 +1,99 @@
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+/*media query : Media queries allow you to apply CSS styles depending on a device's media 
+type (such as print vs. screen) or other features or characteristics 
+such as screen resolution or orientation, aspect ratio, browser viewport width or height, user preferences such as 
+preferring reduced motion, data usage, or transparency.
+ /*max-width means:this code will activate if screen 
+size is 600px or less */
+@media (max-width:750px)
+{ 
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+/*for a range particular code*/
+@media (min-width:751px) and (max-width:999px)
+{ 
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+/*when screen size is too big (1000px)we can accordomate 4 videos*/
+/*once screen size is 1000px this below code will be activated*/
+@media (min-width:1000px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  /*shortcut of css styles*/
+  /*for padding insted of mentioning left,right,top,bottom
+  we can use padding:4px 10px.......(4px is value of verticle(top and bottom) padding)
+  and (10px is value of horizontal(left and right) padding)
+  we can also setup
+  padding:4px 10px 20px 30px
+  4 is for padding top
+  10 is for padding right
+  20 is for padding bottom
+  30 is for padding left
+  similarly for margins also
+  border: 2px solid red is also a shortcut*/
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}

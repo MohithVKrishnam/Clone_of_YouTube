@@ -1,0 +1,37 @@
+.sidebar{
+  position:fixed;
+  left:0;
+  bottom:0;
+  top:55px;
+  background-color: white;
+  width:72px;
+  z-index:200;
+  padding-top:5px;
+}
+/*this .side-bar-link is called css selector*/
+.sidebar-link{
+  height:74px;
+  display:flex;
+  justify-content:center; /*affects the verticle direction of the direction*/
+  align-items:center; /* afects the horizontal direction*/
+  flex-direction:column;  /*causes elements to be displayed horizontally for row*/
+  /*causes elements to be displayed vertically for columns*/
+  cursor:pointer;
+}
+.sidebar-link:hover{
+  background-color: rgb(235, 235, 235);
+}
+/*the space between .sidebar-link and img is used to 
+apply the styling to images under sidebar-link*/
+/*targeting only images under sidebar*/
+.sidebar-link img{
+  height:24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto,Arial;
+  font-size: 10px;
+
+
+}
